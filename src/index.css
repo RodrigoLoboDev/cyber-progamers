@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heading::after {
+    content: '';
+    background-color: #21afd2;
+    height: 1.3rem;
+    max-width: 100%;
+    display: block;
+    margin-top: -1rem;
+    margin-left: 1rem;
+    margin-right: -1rem;
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+}
