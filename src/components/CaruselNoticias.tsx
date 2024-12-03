@@ -7,9 +7,9 @@ import { noticiaType } from '../types';
 import { getNoticias } from '../services/noticiasAPI';
 
 // Import Swiper styles
-import 'swiper/css';
+import 'swiper/swiper-bundle.css';
 
-import 'swiper/css/navigation'; // Estilos para el módulo de navegación
+// import 'swiper/css/navigation'; // Estilos para el módulo de navegación
 import SCaruselNoticias from './skeleton/SCaruselNoticias';
 
 
@@ -22,7 +22,9 @@ const CaruselNoticias = () => {
         const fetchGetNoticias = async () => {
             try {
                 const noticias = await getNoticias()
-                setNoticias(noticias)
+                if (noticias) {
+                    setNoticias(noticias)
+                }
             } catch (error) {
                 setError("Error al cargar la noticia. Inténtalo nuevamente.");
             } finally {

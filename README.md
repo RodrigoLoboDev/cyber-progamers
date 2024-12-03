@@ -73,7 +73,7 @@ src/
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/RodrigoLoboDev/REST_API_FRONTEND-PRODUCTS
+git clone https://github.com/RodrigoLoboDev/cyber-progamers
 ```
 2. Instala las dependencias:
 

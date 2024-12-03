@@ -19,7 +19,7 @@ const IndexPage = () => {
 
   const [imagenes, setImagenes] = useState<imagenType[]>([]); // Lista de URLs de imágenes
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchGaleria = async () => {
@@ -30,8 +30,6 @@ const IndexPage = () => {
             }
         } catch (err) {
             setError("Error al cargar la galería. Inténtalo nuevamente.");
-        } finally {
-            setLoading(false);
         }
     };
     fetchGaleria();
