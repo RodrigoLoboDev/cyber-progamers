@@ -59,7 +59,7 @@ const AdminGaleria = () => {
 
                     // Subir imagen a Cloudinary
                     const response = await axios.post(
-                        `https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUD_NAME}/image/upload`,
+                        `https://api.cloudinary.com/v1_1/djibjrrxy/image/upload`,
                         formData
                     );
                     originalUrl = response.data.secure_url; // Obtener la URL de la imagen
